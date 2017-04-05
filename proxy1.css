@@ -2,6 +2,7 @@ body,
 html {
     width: 100%;
     height: 100%;
+	background-color:lightgrey;
 }
 body,
 h1,
@@ -68,25 +69,6 @@ h6 {
     width: 200px;
     border-top: 3px solid #e7e7e7;
 }
-/*footer {
-    padding: 10px;
-    background-color: #f8f8f8;
-	
-}
-footer .container  .list-inline{
-	font-family:verdana;
-	display:inline;
-}
-footer .container  .list-inline li a{
-	list-style-type:none;
-	text-decoration:none;
-}
-footer .container  .list-inline li{
-		float:left;
-		margin-left:10%;
-		margin-top:1%;
-		margin-bottom:1%;
-}*/
 
 .searchbar
 {
@@ -98,8 +80,9 @@ footer .container  .list-inline li{
 	font-family: Verdana;
 	border: none;
 	margin-left:7%;
-	background-color:#006969;
+	background-color:white;
 	width:40%;
+	color:black;
 }
 .searchbar input
 {
@@ -109,6 +92,7 @@ footer .container  .list-inline li{
 	opacity: 1;
 	font-family: Verdana;
 	border: none;
+	
 }
 .searchbar input:focus
 {
@@ -131,8 +115,10 @@ footer .container  .list-inline li{
 	float:right;
 	margin-top:-30%;
 	margin-right:7%;
-	background-color:#006969;
+	background-color:white;
 	width:40%;
+	color:black;
+	height:310px;
 }
 .searchbar2 input
 {
@@ -221,6 +207,14 @@ footer .container  .list-inline li{
 }
 .intext
 {
+	color:white;
+	font-family:Helvetica;
+	background-color:#8b5b85;
+}
+.intext1
+{
 	color:black;
 	font-family:Helvetica;
+	background-color:lightgrey;
+	
 }

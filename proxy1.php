@@ -26,11 +26,11 @@
                 
                     <div class="intro-message">
                         <!--<h1>Search Page</h1>-->
-                        <h3  style="color:white;padding:10px;border-radius:10px;transition:0.3s;opacity:0.8;font-family:Verdana;border:none;margin-left:7%;background-color:#006969;width:40%;">Search the student by his/her name</h3>
+                        <h3  style="color:black;padding:10px;border-radius:10px;transition:0.3s;opacity:0.8;font-family:Verdana;border:none;margin-left:7%;background-color:white;width:40%;">Search the student by his/her name</h3>
                         <!--<hr class="intro-divider">-->
                         <form class="searchbar">
 							Enter the name of the student:<br/><br/>
-							<input type="text" placeholder="name" name="firstname" value="" class="intext"/><br/><br/>
+							<input type="text" placeholder="" name="firstname" value="" class="intext1"/><br/><br/>
 							<!--Enter the last name of the student:<br/>
 							<input type="text" placeholder="last name" name="lastname" value=""  class="intext" /><br/><br/>-->
 							<input type="submit"  name="subname" value="submit"  class="intext" style="color:white;"/><br/><br/>
@@ -38,42 +38,18 @@
 						<hr class="intro-divider">
 						<form class="searchbar">-->
 							Enter the Division:<br/><br/>
-							<input type="text" placeholder="Enter the division" name="classno" value=""  class="intext"/><br/><br/><br/>
+							<input type="text" placeholder="" name="classno" value=""  class="intext1"/><br/><br/><br/>
 							<input type="submit"  name="subnumber" value="submit"  class="intext" style="color:white;"/><br/><br/>
 						</form>
-						<h3  style="color:white;padding:10px;border-radius:10px;transition:0.3s;opacity:0.8;font-family:Verdana;border:none;float:right;margin-right:7%;margin-top:-29.25%;background-color:#006969;width:40%;">Search the event</h3><br/><br/><br/><br/>
+						<h3  style="color:black;padding:10px;border-radius:10px;transition:0.3s;opacity:0.8;font-family:Verdana;border:none;float:right;margin-right:7%;margin-top:-29.25%;background-color:white;width:40%;">Search the event</h3><br/><br/><br/><br/>
 						<form class ="searchbar2">
 							Enter the event:<br/><br/>
-							<input type="text" placeholder="Enter the event" name="eventname" value=""  class="intext"/><br/><br/><br/>
+							<input type="text" placeholder="" name="eventname" value=""  class="intext1"/><br/><br/><br/>
 							<input type="submit"  name="subeventname" value="submit"  class="intext" style="color:white;"/><br/><br/>
 						</form>
                     </div>
                 
             
         </div>
-    <!-- Footer -->
-    <!--<footer>
-        <div class="container">
-            
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Services</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                   </div>
-    </footer>-->
-
 </body>
 </html>
