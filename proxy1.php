@@ -45,7 +45,9 @@
 						<form class ="searchbar2">
 							Enter the event:<br/><br/>
 							<input type="text" placeholder="" name="eventname" value=""  class="intext1"/><br/><br/><br/>
+							<form action="eventparticipation.php" method="POST">
 							<input type="submit"  name="subeventname" value="submit"  class="intext" style="color:white;"/><br/><br/>
+							</form>
 						</form>
                     </div>
                 
