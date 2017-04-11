@@ -50,7 +50,7 @@ mysql_select_db('db_modified')  or die(mysql_error());
 if(isset($_POST['submit']))
 {
 $eventname=$_POST['val'];
-$query=mysql_query("select first_name,last_name FROM student_profile where id  In (select id from events where event_name='$eventname')") or die(mysql_error());
+$query=mysql_query("select first_name,last_name FROM student_profile where id  In (select id from events where event_name='".$eventname."')") or die(mysql_error());
 echo'<table border="1"><th >first_name</th><th>last_name</th><th>id</th>';
 while($res=mysql_fetch_array($query))
 {
