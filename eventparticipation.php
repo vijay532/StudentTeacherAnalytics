@@ -1,53 +1,26 @@
-<?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$db="dcs(1)";
-$connection = new mysqli($servername, $username, $password,$db);
-if ($connection->connect_error) 
-{
-    die("Connection failed: " . $connection->connect_error);
-}
-mysql_select_db('dcs(1)');
-if(isset($_POST['submit']))
-{
-$event_name = $_POST['event_name'];
-$sql = "SELECT First_name,last_name FROM student_profile WHERE 
-		id IN(select id from events where event_name='$event_name'
-		)";
-$record=mysql_query($sql);
-}
-else
-{
-	echo'give an appropiate event name';
-}
-?>
 <html>
-<head>
-<style>
+<body>
+<center>
+<style type="text/css">
 table{
 	border-collapse:collapse;
+	text-align:center;
+}
+th,td{
+border-width:0px 1px 1px 0px;
 }
 </style>
-</head>
-<center>
-<body>
-<table border="1" cellspacing='1' cellpadding="1">
-<tr>
-<th>first name</th>
-<th>last name</th>
-<th>id</th>
-</tr>
-<?php 
-while($student_profile = mysql_fetch_assoc($sql))
+<?php
+mysql_connect('localhost','root','') or die(mysql_error());
+mysql_select_db('db_modified')  or die(mysql_error());
+$query=mysql_query("select first_name,last_name FROM student_profile") or die(mysql_error());
+echo'<table border="1"><th >first_name</th><th>last_name</th>';
+while($res=mysql_fetch_array($query))
 {
-	echo"<tr>";
-echo"<td>".$student_profile['first_name']."</td>";
-echo"<td>".$student_profile['last_name']."</td>";
-echo"</tr>";
+  echo'<tr><td>'.$res['first_name'].'</td><td>'.$res['last_name'].'</td></tr>';
 }
+echo'</table>';
 ?>
-</center>
-</table>
+</center
 </body>
 </html>
