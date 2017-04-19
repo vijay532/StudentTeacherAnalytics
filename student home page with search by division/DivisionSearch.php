@@ -8,8 +8,12 @@
 </header>
 <div class ="content">
 <?php 
-$db = new mysqli("localhost", "root", "", "test");
-$classno=$_POST["classno"];
+$db = new mysqli("localhost", "root", "", "dcs");
+if(isset($_POST["firstname"]))
+    echo $_POST["classno1"];
+else
+    echo "no";
+$classno=$_POST["classno1"];
  ?>
 <table border="1" align="center">
 <tr>
