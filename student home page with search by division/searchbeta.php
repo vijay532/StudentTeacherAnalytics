@@ -26,19 +26,25 @@
             <!--<h1>Search Page</h1>-->
             <h3  style="color:black;padding:10px;border-radius:10px;transition:0.3s;opacity:0.8;font-family:Verdana;border:none;margin-left:7%;background-color:white;width:40%;">Search the student by his/her name</h3>
             <!--<hr class="intro-divider">-->
-            <form class="searchbar" action="DivisionSearch.php" method="POST">
+            <form class="searchbar" >
 				Enter the name of the student:<br/><br/>
 				<input type="text" placeholder="" name="firstname" value="" class="intext1"/><br/><br/>
+				<!--Enter the last name of the student:<br/>
+				<input type="text" placeholder="last name" name="lastname" value=""  class="intext" /><br/><br/>-->
 				<input type="submit"  name="subname" value="submit"  class="intext" style="color:white;"/><br/><br/>
-            <!-- </form>
-				<br><br>
-			<form class="searchbar" action="DivisionSearch.php" method="POST"> -->
-				Enter the Division:<br/><br/>
-				<input type="text" placeholder="" name="classno1" value=""  class="intext1" id="classno1"/><br/><br/>
-				<input type="submit" name="subname" value="submit" class="intext" style="color:white;" onclick="extracurrics()"/><br/><br/>
+                <!--</form>
+				<hr class="intro-divider">
+				<form class="searchbar">-->
+				
 			</form>
+			<form  class ="searchbar" action="DivisionSearch.php" method='POST'>
+				Enter the Division:<br/><br/>
+				<input type="text" placeholder="" name="classno" value=""  class="intext1" id="classno"/><br/><br/>
+				<input type="submit"  name="subname" value="submit"  class="intext" style="color:white;" onclick="extracurrics()"/><br/><br/>
+				<!--<link ><a  style="cursor:pointer;list-style-type:none;"  onclick="extracurrics()">submit</a></link>-->
+				</form>
 			<div id ="detailextrainfo" class="detailextrainfo">
-				<a href="javascript:void(0)" class="closeExtrabtn" onclick="closeExtra()">&times;</a>
+				<a href="javascript:void(0)" class="closeExtrabtn" onFocus="closeExtra()">&times;</a>
 				<?php include "DivisionSearch.php"; ?>
 			</div>
 			<h3  style="color:black;padding:10px;border-radius:10px;transition:0.3s;opacity:0.8;font-family:Verdana;border:none;float:right;margin-right:7%;margin-top:-26.5%;background-color:white;width:40%;">Search the event</h3><br/><br/><br/><br/>
@@ -54,6 +60,7 @@
 </div>
 <script>
 		function extracurrics(){
+		//classNo = document.getElementById("classno");
 		document.getElementById("detailextrainfo").style.width = "100%";
 		window.scrollTo(0,0);
 	}

@@ -9,12 +9,12 @@
 <div class ="content">
 <?php 
 $db = new mysqli("localhost", "root", "", "dcs");
-if(isset($_POST["firstname"]))
-    echo $_POST["classno1"];
+if(isset($_POST["classno"]))
+    echo $_POST["classno"];
 else
     echo "no";
-$classno=$_POST["classno1"];
- ?>
+$classno=$_POST["classno"];
+?>
 <table border="1" align="center">
 <tr>
 <td>First Name</td>
@@ -23,7 +23,7 @@ $classno=$_POST["classno1"];
 </tr>
 <tr>
 <?php 
-    $sql = "SELECT * FROM student_profile ";
+    $sql = "SELECT * FROM student_profile where classno='$classno'";
     $result = $db->query($sql);
     while($row = mysqli_fetch_assoc($result)) {
         ?>
