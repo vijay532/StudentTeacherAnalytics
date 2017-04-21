@@ -1,21 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @vijay532
- Sign out
- Watch 0
-  Star 0
-  Fork 0 khalDrogo13/Student-Analytics Private
- Code  Issues 0  Pull requests 0  Projects 1  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathStudent-Analytics/champ/search.html
-a3652c1  16 days ago
-@vijay532 vijay532 dekh le
-1 contributor
-RawBlameHistory     
-156 lines (149 sloc)  3.63 KB
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -160,5 +142,3 @@ background-color:#007980;
 </center>
 </body>
 </html>                                		
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
